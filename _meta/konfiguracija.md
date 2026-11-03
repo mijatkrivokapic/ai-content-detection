@@ -20,3 +20,4 @@ Srpski, latinica. Engleski termin u zagradi uz srpski.
 
 ## Sekundarni konteksti
 - [[Kocka]]: izvor jednostavnih primera za svaki pojam.
+- [[Poligon]]: izvor primera sa imenovanim generativnim modelima i detektorima (Tekst-G, Lica-G, P-Detektor i dr.), kada primarni kontekst nema odgovarajući element. Ne zamenjuje primarni kontekst.

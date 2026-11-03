@@ -19,6 +19,9 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - normalna (Gausova) raspodela
 - Šenonova entropija
 - klasifikator
+- funkcija gubitka
+- Furijeova transformacija
+- piksel, kanal boje
 
 ## Konvencije
 - Termin **primerak** (sample, instance) označava jednu jedinicu sadržaja (tekst, slika, audio ili video zapis). Termin „primer“ se ne koristi u tom značenju, jer je rezervisan za odeljak Primer u beleškama.
@@ -36,6 +39,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - [[Strategija uzorkovanja]] i [[Strategija izbora tokena]] su dva pojma. Strategija uzorkovanja je širi pojam: svako pravilo kojim se raspodela modela menja neposredno pre uzorkovanja, uključujući [[Temperatura|temperaturu]]. Strategija izbora tokena je uži pojam: samo pravilo konačnog izbora tokena (pohlepni izbor, top-k, top-p). Uža beleška se linkuje na širu.
 - [[Poligon]] je drugi sekundarni kontekst, za primere sa imenovanim modelima i detektorima (Tekst-G, Lica-G, P-Detektor i dr.). Glavni primer svakog pojma ostaje u kontekstu [[Novinska agencija Vidik]], a jednostavan u kontekstu [[Kocka]].
 - Svaki pojam ima svoju belešku u `pojmovi/`, a naziv fajla je srpski termin u nominativu jednine. Više pojmova u jednom fajlu se ne drži.
+- Materijali prezentacija čuvaju se u `runde/runda-N/prezentacija-K/`, urednički pregled u `runde/runda-N/urednici.md`, a pregled runde u `runde/runda-N/README.md`. Raspored je opisan u `README.md`.
 
 ## Promene konvencija
 - 2026-10-31: Strategija uzorkovanja se više ne obrađuje u okviru pojma Uzorkovanje, već kao poseban pojam. Razlog: šira definicija uzorkovanja bila bi cirkularna (preko Generativnog modela) i ne bi pokrila uzorkovanje trening skupa iz raspodele podataka.
@@ -47,7 +51,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-03: Uveden sekundarni kontekst Poligon, preuzet iz Pojmovnika, jer ga koriste beleške iz runde 1 (prezentacija 3).
 - 2026-11-03: Beleške iz prezentacije 3 razdvojene su u pojedinačne fajlove, bez izmene teksta. Dodate su beleške za pojmove iz prezentacije 2 i beleška Strategija uzorkovanja.
 - 2026-11-03: Kontekst Novinska agencija Vidik dopunjen je modelima kojima se služi nalog „očevidac“ (jezički model, model lica, model slika iz teksta), jer ih beleške iz runde 1 već koriste. Kontekst Kocka dopunjen je zapisnikom bacanja.
-- 2026-11-03: Dodati pretpostavljeni pojmovi: neuronska mreža, transformer, normalna (Gausova) raspodela, Šenonova entropija, klasifikator. Softmax ostaje definisan, jer za njega postoji beleška.
+- 2026-11-03: Repozitorijum je organizovan po rundama (folder `runde/`). Prezentacije runde 1 premeštene su iz korena u `runde/runda-1/`, bez izmene sadržaja.
+- 2026-11-03: Dodati pretpostavljeni pojmovi: neuronska mreža, transformer, normalna (Gausova) raspodela, Šenonova entropija, klasifikator, funkcija gubitka, Furijeova transformacija, piksel, kanal boje. Softmax ostaje definisan, jer za njega postoji beleška.
 
 ## Otvorena pitanja
 - Pohlepni izbor: beleška [[Uzorkovanje]] ga tumači kao granični slučaj uzorkovanja, a beleška [[Strategija izbora tokena]] kaže da nije uzorkovanje. Treba usvojiti jedno tumačenje.
