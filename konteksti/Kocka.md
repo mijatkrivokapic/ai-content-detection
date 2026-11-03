@@ -13,3 +13,4 @@ Bacanje kocke za igru. Služi za jednostavne primere koji pokazuju suštinu pojm
 - **Nepoznata kocka**: kocka čija se raspodela ne zna; zapisano je 600 njenih bacanja.
 - **Crvena i plava kocka**: u džepu su crvena poštena i plava nameštena kocka.
 - **Aparat za bacanje**: uređaj koji baca kocku nepravilnog oblika i daje ishode, bez zapisanih verovatnoća.
+- **Zapisnik**: bacanja zapisana kao niz brojeva razdvojenih zarezom, npr. „6,1,6“.

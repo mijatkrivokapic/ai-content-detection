@@ -1,0 +1,6 @@
+# Automatski fajlovi Pythona
+__pycache__/
+*.pyc
+
+# Video i slike koje Manim pravi pri pokretanju
+media/
