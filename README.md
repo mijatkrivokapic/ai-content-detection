@@ -69,4 +69,4 @@ Otvoriti koren repozitorijuma kao Obsidian vault. Linkovi `[[...]]` tada vode od
 | Runda | Tema | Status |
 |---|---|---|
 | [Runda 1](runde/runda-1/README.md) | Osnove generisanja, reprezentacija i latentni prostor, jezički model | završena |
-| [Runda 2](runde/runda-2/README.md) | Arhitekture generatora, ostali mediji, od generisanja ka detekciji | u pripremi |
+
