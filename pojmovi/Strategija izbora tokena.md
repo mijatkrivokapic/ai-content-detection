@@ -1,6 +1,6 @@
 ---
 tip: pojam
-aliases: [decoding strategy, strategija izbora, strategija uzorkovanja]
+aliases: [decoding strategy, strategija izbora]
 izvor: A. Holtzman i dr., „The Curious Case of Neural Text Degeneration", ICLR 2020
 ---
 # Strategija izbora tokena (decoding strategy)
@@ -21,3 +21,4 @@ Verovatnoće tokena posle „Danas je": lep 40%, petak 20%, dan 15%, kiša 12%, 
 - Engleski termin „decoding strategy" ovde se ne prevodi kao „strategija dekodiranja", da se ne bi mešao sa pojmom [[Dekoder|dekoder]].
 - Strategija i temperatura se obično koriste zajedno: prva bira token, druga oblikuje raspodelu iz koje se bira.
 - Top-k i top-p unose slučajnost ([[Uzorkovanje]]), ali odsecaju najneverovatnije tokene da tekst ne bi izgubio smisao. Pohlepni izbor nije uzorkovanje, jer nema slučajnosti.
+- Strategija izbora tokena je deo šireg pojma [[Strategija uzorkovanja|strategija uzorkovanja]], koji obuhvata i temperaturu.
