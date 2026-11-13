@@ -54,6 +54,11 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-03: Repozitorijum je organizovan po rundama (folder `runde/`). Prezentacije runde 1 premeštene su iz korena u `runde/runda-1/`, bez izmene sadržaja.
 - 2026-11-03: Dodati pretpostavljeni pojmovi: neuronska mreža, transformer, normalna (Gausova) raspodela, Šenonova entropija, klasifikator, funkcija gubitka, Furijeova transformacija, piksel, kanal boje. Softmax ostaje definisan, jer za njega postoji beleška.
 
+- 2026-11-10 (runda 2, prezentacija 1): Pojmovi ove prezentacije ne koriste primarni kontekst [[Novinska agencija Vidik]]. Razlog: pojmovi se tiču reprezentacija koje Vidik ne obuhvata (zvuk, 3D modeli). Jednostavan primer je iz konteksta [[Kocka]]. Odeljak „Primer“ dat je bez konteksta, sa neimenovanim modelima. Pasusi odeljka „Kontraprimer“ koji ne potiču iz konteksta Kocka označeni su sa **Opšti slučaj.**
+
+- 2026-11-10 (runda 2, prezentacija 1): U belešci Generativna suparnička mreža primer je model lica trenirana kao GAN, a u belešci Difuzioni model i Varijacioni autoenkoder model slika iz teksta, koji je difuzioni model u latentnom prostoru sa varijacionim autoenkoderom. Za Model toka koristi se hipotetički model toka za fotografije lica, jer ga u ostalim primerima nema.
+- 2026-11-10 (runda 2, prezentacija 1): [[Difuzioni model]] je u definiciji eksplicitni generativni model, kao [[Varijacioni autoenkoder]] i [[Model toka]], jer [[Eksplicitni generativni model]] obuhvata i modele sa donjom granicom verodostojnosti.
+
 ## Otvorena pitanja
 - Pohlepni izbor: beleška [[Uzorkovanje]] ga tumači kao granični slučaj uzorkovanja, a beleška [[Strategija izbora tokena]] kaže da nije uzorkovanje. Treba usvojiti jedno tumačenje.
 - Da li jednostavan primer mora biti iz konteksta Kocka i kada kocka slabo pokazuje pojam?
