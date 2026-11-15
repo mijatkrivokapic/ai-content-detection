@@ -22,6 +22,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - funkcija gubitka
 - Furijeova transformacija
 - piksel, kanal boje
+- sadržaj (tekst, slika, audio, video)
+- standardna devijacija
 
 ## Konvencije
 - Termin **primerak** (sample, instance) označava jednu jedinicu sadržaja (tekst, slika, audio ili video zapis). Termin „primer“ se ne koristi u tom značenju, jer je rezervisan za odeljak Primer u beleškama.
@@ -40,6 +42,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - [[Poligon]] je drugi sekundarni kontekst, za primere sa imenovanim modelima i detektorima (Tekst-G, Lica-G, P-Detektor i dr.). Glavni primer svakog pojma ostaje u kontekstu [[Novinska agencija Vidik]], a jednostavan u kontekstu [[Kocka]].
 - Svaki pojam ima svoju belešku u `pojmovi/`, a naziv fajla je srpski termin u nominativu jednine. Više pojmova u jednom fajlu se ne drži.
 - Materijali prezentacija čuvaju se u `runde/runda-N/prezentacija-K/`, urednički pregled u `runde/runda-N/urednici.md`, a pregled runde u `runde/runda-N/README.md`. Raspored je opisan u `README.md`.
+- [[Generisani sadržaj]] je definisan uže: ceo primerak dobijen uzorkovanjem iz generativnog modela. Primerak koji je samo delom dobijen iz generativnog modela ne obuhvata se ovim pojmom; videti otvoreno pitanje. Koristi se termin „generisani“, a ne „sintetički“, radi doslednosti sa terminima generativni model i uslovno generisanje; „sintetički sadržaj“ je alias.
 
 ## Promene konvencija
 - 2026-10-31: Strategija uzorkovanja se više ne obrađuje u okviru pojma Uzorkovanje, već kao poseban pojam. Razlog: šira definicija uzorkovanja bila bi cirkularna (preko Generativnog modela) i ne bi pokrila uzorkovanje trening skupa iz raspodele podataka.
@@ -53,8 +56,17 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-03: Kontekst Novinska agencija Vidik dopunjen je modelima kojima se služi nalog „očevidac“ (jezički model, model lica, model slika iz teksta), jer ih beleške iz runde 1 već koriste. Kontekst Kocka dopunjen je zapisnikom bacanja.
 - 2026-11-03: Repozitorijum je organizovan po rundama (folder `runde/`). Prezentacije runde 1 premeštene su iz korena u `runde/runda-1/`, bez izmene sadržaja.
 - 2026-11-03: Dodati pretpostavljeni pojmovi: neuronska mreža, transformer, normalna (Gausova) raspodela, Šenonova entropija, klasifikator, funkcija gubitka, Furijeova transformacija, piksel, kanal boje. Softmax ostaje definisan, jer za njega postoji beleška.
+- 2026-11-13: Dodat pojam Generisani sadržaj, u užem značenju (ceo primerak), i pretpostavljeni pojam sadržaj. Razlog za užu definiciju: šira, koja obuhvata i delimično generisan sadržaj (kao kod NIST AI 100-4), zahteva prag „značajne“ izmene koji je subjektivan, a detekcija delimično generisanog sadržaja ima i zadatak lokalizacije generisanog dela.
+- 2026-11-13: Dodat pojam Detektor, uže od NIST AI 100-4: detektor je algoritam (čovek nije detektor, iako radi detekciju), a definicija je binarna (generisan ili ne); određivanje generisanog dela i generativnog modela su proširenja. Detektor ne linkuje Prag odluke, da lanac definicija ne bi bio cirkularan. Kontekst Novinska agencija Vidik dopunjen je detektorima generisanog sadržaja za tekst i fotografije.
+- 2026-11-13: Dodat pojam Naučeni detektor, u užem značenju kao kod NIST AI 100-4 (nadgledano učenje na primercima označenim kao generisani ili negenerisani); jednoklasni detektori nisu obuhvaćeni. Koristi se termin „naučeni“, a „trenirani detektor“ je alias. Kontekst: detektor za tekst meri perpleksnost, a detektor fotografija je naučeni.
+- 2026-11-13: Dodat pojam Prag odluke, sa jednim pragom, u skladu sa binarnom definicijom detektora; dva praga i ručna provera su proširenje. Kao izvor je naveden T. Fawcett (2006), odeljak 4, gde se prag uvodi kao vrednost kojom klasifikator sa skorom postaje binarni klasifikator; formulacija je proverena u tekstu rada.
+- 2026-11-15: Dodat pojam Ključ žiga kao tajna vrednost, u skladu sa beleškom Vodeni žig; javni žig je u napomeni. Kontekst: jezički model naloga „očevidac“ ugrađuje žig, a ključ drži proizvođač.
+- 2026-11-15: Dodati pojmovi Mesto ugradnje žiga, Nulta hipoteza, Z-skor, P-vrednost i Detekcija sa žigom, i pretpostavljeni pojam standardna devijacija. Nulta hipoteza se ne definiše preko p-vrednosti, da lanac ne bi bio cirkularan. U primerima zelena lista je četvrtina rečnika, kao u beleški Vodeni žig, a prag je z > 4. Kontekst: model slika iz teksta ugrađuje žig u početni šum.
+- 2026-11-15: Izvori za Nultu hipotezu, Z-skor i P-vrednost provereni su u tekstu izvora. Za Nultu hipotezu Casella i Berger zamenjeni su priručnikom NIST/SEMATECH i radom Kirchenbauer i dr., jer formulaciju iz udžbenika nije bilo moguće proveriti.
 
 ## Otvorena pitanja
 - Pohlepni izbor: beleška [[Uzorkovanje]] ga tumači kao granični slučaj uzorkovanja, a beleška [[Strategija izbora tokena]] kaže da nije uzorkovanje. Treba usvojiti jedno tumačenje.
 - Da li jednostavan primer mora biti iz konteksta Kocka i kada kocka slabo pokazuje pojam?
 - Formulacija izvora za [[Uslovno generisanje]] (Goodfellow i dr., Deep Learning, pogl. 20) nije proverena.
+- Delimično generisan sadržaj (primerak koji je samo delom dobijen iz generativnog modela, npr. stvarna fotografija u koju je model ubacio predmet) nije definisan. Uža definicija [[Generisani sadržaj|generisanog sadržaja]] ga isključuje, pa takav primerak u bazi nema svoj pojam. Kandidat za prezentaciju o lokalizaciji generisanog dela ili o napadima na detektore.
+- „Lažno pozitivan nalaz“ se koristi nelinkovan u beleškama [[Detekcija bez žiga]], [[Vodeni žig]], [[Prag odluke]] i [[Detekcija sa žigom]]; po planu se definiše u prezentaciji 6.

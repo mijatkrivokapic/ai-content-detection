@@ -14,3 +14,4 @@ Bacanje kocke za igru. Služi za jednostavne primere koji pokazuju suštinu pojm
 - **Crvena i plava kocka**: u džepu su crvena poštena i plava nameštena kocka.
 - **Aparat za bacanje**: uređaj koji baca kocku nepravilnog oblika i daje ishode, bez zapisanih verovatnoća.
 - **Zapisnik**: bacanja zapisana kao niz brojeva razdvojenih zarezom, npr. „6,1,6“.
+- **Program sa žigom**: program koji „baca“ virtuelnu poštenu kocku, ali posle svake trojke češće bira peticu nego što bi to poštena kocka radila; par (3, 5) je ključ žiga, poznat samo autoru programa.
