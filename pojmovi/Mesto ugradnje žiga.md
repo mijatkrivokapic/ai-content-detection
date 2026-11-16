@@ -6,13 +6,13 @@ izvor: NIST AI 100-4, Reducing Risks Posed by Synthetic Content, 2024, odeljci 3
 # Mesto ugradnje žiga (watermark embedding point)
 
 ## Definicija
-Mesto ugradnje žiga je deo generisanja u koji se ugrađuje [[Vodeni žig|vodeni žig]]: parametri [[Generativni model|generativnog modela]], početni [[Gausov šum|šum]], [[Uzorkovanje|uzorkovanje]] ili gotov izlaz.
+Mesto ugradnje žiga je tačka u nastanku [[Generisani sadržaj|generisanog sadržaja]] u kojoj se ugrađuje [[Vodeni žig|vodeni žig]]: parametri [[Generativni model|generativnog modela]], početni [[Gausov šum|šum]], [[Uzorkovanje|uzorkovanje]] ili gotov izlaz.
 
 ## Jednostavan primer
 Program koji „baca“ virtuelnu kocku i posle svake trojke češće bira peticu ugrađuje žig pri uzorkovanju. Naknadna prepravka nekih brojeva u već zapisanom zapisniku, po pravilu koje zna samo onaj ko ga prepravlja, ugradnja je u gotov izlaz.
 
 ## Primer
-Jezički model naloga „očevidac“ ugrađuje žig pri uzorkovanju: pre izbora svakog tokena pomera verovatnoće ka tokenima sa zelene liste. Model slika iz teksta ugrađuje žig u početni šum: iz šuma u koji je ugrađen obrazac nastaje fotografija poplave, a obrazac se kasnije može otkriti samo uz pristup modelu i [[Ključ žiga|ključu]].
+Jezički model naloga „očevidac“ ugrađuje žig pri uzorkovanju: pre izbora svakog tokena pomera verovatnoće ka tokenima sa zelene liste. Model slika iz teksta, koji fotografiju pravi uklanjanjem šuma iz nasumičnog početnog stanja, ugrađuje žig u početni šum: iz šuma u koji je ugrađen obrazac nastaje fotografija poplave, a obrazac se kasnije može otkriti samo uz pristup modelu i [[Ključ žiga|ključu]].
 
 ## Kontraprimer
 **Kocka.** Napomena „generisano programom“ zapisana iznad zapisnika nije ugradnja žiga, jer nije u samim brojevima.
