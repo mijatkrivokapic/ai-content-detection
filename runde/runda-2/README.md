@@ -1,6 +1,6 @@
 # Runda 2: Arhitekture generativnih modela, detekcija i napadi
 
-**Termin:** utorak, 17. 11. 2026, 17:50, NTP 417 · **Tema:** 3, Detekcija AI-generisanog sadržaja · **Status:** u toku (predate prezentacije 1–3)
+**Termin:** utorak, 17. 11. 2026, 17:50, NTP 417 · **Tema:** 3, Detekcija AI-generisanog sadržaja · **Status:** završena
 
 Runda nastavlja bazu iz [runde 1](../runda-1/README.md): koje arhitekture proizvode sadržaj i kakve tragove ostavljaju, kako detektor odlučuje i proverava žig, i kako se detekcija greši i napada.
 
