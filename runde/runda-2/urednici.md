@@ -1,7 +1,7 @@
 ---
 tip: urednicki-pregled
 runda: 2
-urednici: (dopuniti)
+urednici: Luka Milovanov, Mijat Krivokapić
 ---
 # Urednički pregled, runda 2
 
