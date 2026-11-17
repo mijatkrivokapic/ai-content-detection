@@ -21,6 +21,6 @@ Detektor fotografija agencije Vidik u početku ima prag 0,5. Mnoge stvarne noćn
 
 ## Napomene
 - Isti detektor sa različitim pragom pravi drugačije greške: viši prag znači manje lažnih optužbi negenerisanog sadržaja, a više propuštenog generisanog.
-- Prag se obično bira tako da stopa lažno pozitivnih nalaza na negenerisanom sadržaju bude prihvatljiva. Kod provere [[Vodeni žig|vodenog žiga]] ta stopa se može izračunati unapred.
+- Prag se obično bira tako da [[Stopa lažno pozitivnih nalaza|stopa lažno pozitivnih nalaza]] na negenerisanom sadržaju bude prihvatljiva. Kod provere [[Vodeni žig|vodenog žiga]] ta stopa se može izračunati unapred.
 - Kod detektora čija niska ocena znači generisan sadržaj, kao kod detektora zasnovanog na [[Perpleksnost|perpleksnosti]], generisanim se proglašava ono što je ispod praga.
 - Proširenje: dva praga i treći ishod između njih, ručna provera.

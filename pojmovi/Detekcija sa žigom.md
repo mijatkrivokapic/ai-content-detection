@@ -21,5 +21,5 @@ Agencija Vidik šalje opis događaja naloga „očevidac“ usluzi provere proiz
 
 ## Napomene
 - Detekcija sa žigom je [[Detektor|detektor]] čija je ocena odstupanje od nulte hipoteze, na primer z-skor ili [[P-vrednost|p-vrednost]].
-- Za razliku od [[Detekcija bez žiga|detekcije bez žiga]], stopa lažno pozitivnih nalaza poznata je unapred, jer sledi iz nulte hipoteze i praga. Izvor za prag z > 4 navodi oko 3 od 100 000, iz normalne aproksimacije; tačna stopa zavisi od dužine teksta i za 300 tokena iznosi oko 4 od 100 000.
+- Za razliku od [[Detekcija bez žiga|detekcije bez žiga]], [[Stopa lažno pozitivnih nalaza|stopa lažno pozitivnih nalaza]] poznata je unapred, jer sledi iz nulte hipoteze i praga. Izvor za prag z > 4 navodi oko 3 od 100 000, iz normalne aproksimacije; tačna stopa zavisi od dužine teksta i za 300 tokena iznosi oko 4 od 100 000.
 - Ako primerak ne pređe prag, to ne znači da je ljudski: sadržaj drugih generatora i sadržaj iz kog je žig uklonjen takođe ne prelaze prag.

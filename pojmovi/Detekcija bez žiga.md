@@ -15,9 +15,9 @@ Nastavnik koji po stilu „oseća" da esej nije pisao učenik radi detekciju bez
 P-Detektor meri [[Perpleksnost|perpleksnost]] eseja iz ugla Tekst-G i esej označava kao generisan ako je perpleksnost ispod praga, jer tekst koji je Tekst-G sam generisao iz njegovog ugla obično ima nisku perpleksnost: mašinski tekst nastaje biranjem verovatnih tokena.
 
 ## Kontraprimer
-Student koji sam piše vrlo formalno, sa mnogo ustaljenih izraza, ima tekst sa niskom perpleksnošću. Detektor ga pogrešno označi kao mašinu: to je lažno pozitivan nalaz, odnosno lažna optužba.
+Student koji sam piše vrlo formalno, sa mnogo ustaljenih izraza, ima tekst sa niskom perpleksnošću. Detektor ga pogrešno označi kao mašinu: to je [[Lažno pozitivan nalaz|lažno pozitivan nalaz]], odnosno lažna optužba.
 
 ## Napomene
-- To je statistička procena, a ne provera. Stopa lažno pozitivnih nalaza nije unapred poznata, nego se meri na ljudskom sadržaju.
+- To je statistička procena, a ne provera. [[Stopa lažno pozitivnih nalaza|Stopa lažno pozitivnih nalaza]] nije unapred poznata, nego se meri na ljudskom sadržaju.
 - Greši češće od provere žiga, posebno nad kratkim sadržajem, nad sadržajem generatora koje detektor nije video i nad ljudskim sadržajem koji liči na generisani.
 - Mala izmena sadržaja, na primer parafraziranje, može ukloniti svojstva na koja se oslanja.
