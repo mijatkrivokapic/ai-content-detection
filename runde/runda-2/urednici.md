@@ -41,9 +41,7 @@ Iz runde 1 koristi se: [[Latentni prostor]], [[Dekoder]], [[Enkoder]] i [[Gausov
 
 ## Primedbe za autore (ne menjano)
 
-- Prezentacija 1 ne koristi primarni kontekst Vidik; u odluci piše da je „Primer“ bez konteksta, sa neimenovanim modelima, ali beleške koriste Slika-G, Lica-G i Glas-G iz [[Poligon|Poligona]].
 - [[Falsifikovanje žiga]]: jednostavan primer je sa novčanicom, a konvencija traži primer iz konteksta Kocka.
-- [[Trag generatora]]: izvori nisu proveravani.
 
 ## Otvorena pitanja
 
