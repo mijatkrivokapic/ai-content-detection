@@ -21,4 +21,4 @@ Kada model nema izbora (posle `return a +` skoro sigurno sledi „b"), nema šta
 - Žig nije vidljiv vodeni znak (na primer logo preko slike) i nije metapodatak: ugrađen je u sam sadržaj.
 - Žig u uzorkovanju zavisi od [[Entropija sadržaja|entropije sadržaja]], jer pomera izbore koje model ima.
 - Odsustvo žiga ne dokazuje da je sadržaj ljudski, jer žig ne nose ni sadržaj drugih generatora ni sadržaj iz kog je žig uklonjen.
-- Za razliku od [[Detekcija bez žiga|detekcije bez žiga]], provera žiga zahteva saradnju generatora i tajni ključ, ali ima unapred kontrolisanu stopu lažno pozitivnih nalaza.
+- Za razliku od [[Detekcija bez žiga|detekcije bez žiga]], provera žiga zahteva saradnju generatora i tajni ključ, ali ima unapred kontrolisanu [[Stopa lažno pozitivnih nalaza|stopu lažno pozitivnih nalaza]].
